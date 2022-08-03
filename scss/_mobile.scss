@@ -1,0 +1,1526 @@
+// Desktops and Laptops
+@include mediaXl {
+  // Navbar
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    overflow: hidden;
+    background: rgba(51, 51, 51, 0.8);
+
+    .logo-container {
+      top: 0;
+      left: 0;
+      height: 3rem;
+      width: 3rem;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      overflow: hidden;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+
+      .logo {
+        position: absolute;
+        top: 6px;
+        left: 16.805px;
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+    }
+
+    .menu-btn {
+      top: 0;
+      right: 0;
+      height: 3rem;
+      width: 3rem;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      overflow: hidden;
+      position: absolute;
+
+      .line1 {
+        position: absolute;
+        top: 17.5px;
+      }
+
+      .line2 {
+        margin: 0 auto;
+        top: 22.5px;
+        position: absolute;
+      }
+
+      .line3 {
+        position: absolute;
+        top: 27.5px;
+      }
+
+      &.close {
+        transform: rotate(180deg);
+
+        .btn-line {
+          // Line 1 - Rotate
+          &:nth-child(1) {
+            transform: rotate(45deg) translate(4px, 3px);
+          }
+
+          // Line 2 - Hide
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          // Line 3 - Rotate
+          &:nth-child(3) {
+            transform: rotate(-50deg) translate(4px, -2.5px);
+          }
+        }
+      }
+
+      .btn-line {
+        width: 17px;
+        height: 1px;
+        left: 15.5px;
+        margin: 0;
+      }
+    }
+  }
+
+  // Menu Page
+
+  // Common
+  h1 {
+    padding-top: 2rem;
+  }
+
+  // Home Page
+  #home {
+    h1 {
+      line-height: 1.2;
+    }
+  }
+
+  // About Page
+  #about {
+    h1 {
+      margin-bottom: 0;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+    .container1 {
+      margin-bottom: 1rem;
+      .box1 {
+        flex: 1;
+        .bio-image {
+          margin: 0;
+        }
+      }
+      .box2 {
+        flex: 6;
+      }
+    }
+  }
+
+  // Work Page
+  #work {
+    h1 {
+      margin-bottom: 0;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+    .projects {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  // Contact Page
+  #contact {
+    h1 {
+      margin-bottom: 0;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+    .bold-text {
+      font-weight: bold;
+    }
+  }
+
+  // Footer
+  #main-footer {
+    color: #888;
+  }
+}
+
+// Tablets (Landscape)
+@include mediaLg {
+  // Navbar
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    overflow: hidden;
+    background: rgba(51, 51, 51, 0.8);
+
+    .logo-container {
+      top: 0;
+      left: 0;
+      height: 3rem;
+      width: 3rem;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      overflow: hidden;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+
+      .logo {
+        position: absolute;
+        top: 6px;
+        left: 16.805px;
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+    }
+
+    .menu-btn {
+      top: 0;
+      right: 0;
+      height: 3rem;
+      width: 3rem;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      overflow: hidden;
+      position: absolute;
+
+      .line1 {
+        position: absolute;
+        top: 17.5px;
+      }
+
+      .line2 {
+        margin: 0 auto;
+        top: 22.5px;
+        position: absolute;
+      }
+
+      .line3 {
+        position: absolute;
+        top: 27.5px;
+      }
+
+      &.close {
+        transform: rotate(180deg);
+
+        .btn-line {
+          // Line 1 - Rotate
+          &:nth-child(1) {
+            transform: rotate(45deg) translate(4px, 3px); // Using
+          }
+
+          // Line 2 - Hide
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          // Line 3 - Rotate
+          &:nth-child(3) {
+            transform: rotate(-50deg) translate(4px, -2.5px);
+          }
+        }
+      }
+
+      .btn-line {
+        width: 17px;
+        height: 1px;
+        left: 15.5px;
+        margin: 0;
+      }
+    }
+  }
+
+  // Menu Page
+  .menu {
+    .menu-nav {
+      .nav-item {
+        .nav-link {
+          font-weight: normal;
+          &:hover {
+            color: set-text-color($primary-color);
+          }
+        }
+        &.current > a:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  // Common
+  h1 {
+    padding-top: 2rem;
+  }
+
+  // Home Page
+  #home {
+    h1 {
+      line-height: 1.2;
+    }
+    .noHover {
+      &:hover {
+        color: set-text-color($primary-color);
+      }
+    }
+  }
+
+  // About Page
+  #about {
+    h1 {
+      margin-bottom: 0;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+    .container1 {
+      .box1 {
+        flex: 1;
+        .bio-image {
+          margin: 0;
+        }
+      }
+      .box2 {
+        flex: 4;
+      }
+    }
+  }
+
+  // Work Page
+  #work {
+    h1 {
+      margin-bottom: 0;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+    .projects {
+      grid-template-columns: repeat(3, 1fr);
+      .item {
+        a {
+          font-weight: normal;
+          img {
+            &:hover {
+              opacity: 1;
+              border-color: set-text-color($primary-color);
+            }
+          }
+        }
+
+        .btn-light:hover {
+          background: lighten($color: $primary-color, $amount: 50);
+          color: #333;
+        }
+
+        .btn-dark:hover {
+          background: darken($primary-color, 50);
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  // Contact Page
+  #contact {
+    h1 {
+      margin-bottom: 0;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+    .boxes {
+      div {
+        padding: 1rem 2rem;
+        flex-basis: 100%;
+        &:hover {
+          padding: 1rem 2rem;
+          background: none;
+          color: set-text-color($primary-color);
+          span {
+            color: $secondary-color;
+          }
+          #map {
+            color: #dd4a40;
+          }
+        }
+      }
+    }
+    .bold-text {
+      font-weight: bold;
+    }
+  }
+
+  // Footer
+  #main-footer {
+    color: #888;
+  }
+}
+
+// Tablets Portrait
+@include mediaMd {
+  // Common to every page
+
+  // Navbar
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    overflow: hidden;
+    background: rgba(51, 51, 51, 0.8);
+
+    .logo-container {
+      top: 0;
+      left: 0;
+      height: 3rem;
+      width: 3rem;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      overflow: hidden;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+
+      .logo {
+        position: absolute;
+        top: 6px;
+        left: 16.805px;
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+    }
+
+    .menu-btn {
+      top: 0;
+      right: 0;
+      height: 3rem;
+      width: 3rem;
+      -webkit-tap-highlight-color: transparent;
+      z-index: 4;
+      overflow: hidden;
+      position: absolute;
+
+      .line1 {
+        position: absolute;
+        top: 17.5px;
+      }
+
+      .line2 {
+        margin: 0 auto;
+        top: 22.5px;
+        position: absolute;
+      }
+
+      .line3 {
+        position: absolute;
+        top: 27.5px;
+      }
+
+      &.close {
+        transform: rotate(180deg);
+
+        .btn-line {
+          // Line 1 - Rotate
+          &:nth-child(1) {
+            transform: rotate(45deg) translate(4px, 3px); // Using
+          }
+
+          // Line 2 - Hide
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          // Line 3 - Rotate
+          &:nth-child(3) {
+            transform: rotate(-50deg) translate(4px, -2.5px);
+          }
+        }
+      }
+
+      .btn-line {
+        width: 17px;
+        height: 1px;
+        left: 15.5px;
+        margin: 0;
+      }
+    }
+  }
+  // Menupage
+  .menu {
+    .menu-nav {
+      .nav-item {
+        .nav-link {
+          font-weight: normal;
+          &:hover {
+            color: set-text-color($primary-color);
+          }
+        }
+        &.current > a:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  h1 {
+    padding-top: 1rem;
+  }
+
+  // Homepage
+  #home {
+    text-align: center;
+    line-height: 1.5;
+
+    h1 {
+      font-weight: bold;
+      line-height: 1;
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    .mdheading {
+      margin-top: 30vh;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    .noHover {
+      &:hover {
+        color: set-text-color($primary-color);
+      }
+    }
+  }
+
+  // About Page
+  #about {
+    h1 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .container1 {
+      margin-bottom: 2rem;
+
+      .box1 {
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+
+        .bio-image {
+          margin: 0;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .tab-image {
+          margin-right: 0;
+        }
+      }
+
+      .box2 {
+        flex: 3;
+
+        .bio-heading {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          font-weight: bold;
+        }
+
+        .bio-paragraph {
+          font-weight: normal;
+        }
+      }
+    }
+
+    .container2 {
+      .container2box {
+        flex-basis: 100%;
+        padding: 0;
+        margin-bottom: 2.5rem;
+
+        h3 {
+          margin: 1rem 0;
+          font-weight: bold;
+        }
+
+        #list {
+          margin-top: 0;
+          margin-bottom: 1rem;
+
+          li {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+
+  // Work Page
+  #work {
+    h1 {
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    font-weight: bold;
+
+    h2 {
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+    }
+
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3rem;
+      .item {
+        a {
+          font-weight: normal;
+          img {
+            &:hover {
+              opacity: 1;
+              border-color: set-text-color($primary-color);
+            }
+          }
+        }
+
+        .btn-light:hover {
+          background: lighten($color: $primary-color, $amount: 50);
+          color: #333;
+        }
+
+        .btn-dark:hover {
+          background: darken($primary-color, 50);
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  // Contact Page
+  #contact {
+    h1 {
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .bold-text {
+      font-weight: bold;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    h2 {
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .boxes {
+      font-weight: normal;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+      div {
+        font-weight: normal;
+        flex-basis: 100%;
+        text-align: left;
+        margin-bottom: 2rem;
+        padding: 1rem 2rem;
+        span {
+          font-weight: bold;
+        }
+
+        &:hover {
+          padding: 1rem 2rem;
+          margin-bottom: 2rem;
+          background: none;
+          color: set-text-color($primary-color);
+          span {
+            color: $secondary-color;
+          }
+          #map {
+            color: #dd4a40;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    color: #888;
+    font-weight: normal;
+  }
+}
+
+// Smartphone Landscape
+@include mediaSmL {
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    overflow: hidden;
+    background: rgba(51, 51, 51, 0.8);
+  }
+
+  .logo-container {
+    top: 0;
+    left: 0;
+    height: 3rem;
+    width: 3rem;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 4;
+    overflow: hidden;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+
+    .logo {
+      position: absolute;
+      top: 6px;
+      left: 16.805px;
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+  }
+
+  .menu-btn {
+    top: 0;
+    right: 0;
+    height: 3rem;
+    width: 3rem;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 4;
+    overflow: hidden;
+    position: absolute;
+
+    .line1 {
+      position: absolute;
+      top: 17.5px;
+    }
+
+    .line2 {
+      margin: 0 auto;
+      top: 22.5px;
+      position: absolute;
+    }
+
+    .line3 {
+      position: absolute;
+      top: 27.5px;
+    }
+
+    &.close {
+      transform: rotate(180deg);
+
+      .btn-line {
+        // Line 1 - Rotate
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(4px, 3px);
+        }
+
+        // Line 2 - Hide
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        // Line 3 - Rotate
+        &:nth-child(3) {
+          transform: rotate(-50deg) translate(4px, -2.5px);
+        }
+      }
+    }
+
+    .btn-line {
+      width: 17px;
+      height: 1px;
+      left: 15.5px;
+      margin: 0;
+    }
+  }
+
+  main {
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  #main-footer {
+    color: #888;
+    height: 25px;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    padding-top: 2.5rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    line-height: 1.2;
+  }
+
+  .item1 {
+    margin-top: 11vh;
+  }
+
+  // Menu Page
+  body {
+    header {
+      .menu {
+        .menu-branding {
+          justify-content: flex-start;
+          transform: translate3d(0, 100%, 0);
+
+          &.show {
+            transform: translate3d(0, 0, 0);
+          }
+
+          .portrait {
+            margin-top: 19vh;
+            top: 10px;
+            height: 150px;
+            width: 150px;
+            background: url("../img/abhisek_portrait_small.jpg");
+            background-position: center;
+            transform: translate3d(0, 100%, 0);
+
+            &.show {
+              transform: translate3d(0, 0, 0);
+            }
+          }
+        }
+
+        .menu-nav {
+          justify-content: flex-start;
+          transform: translate3d(0, -100%, 0);
+
+          &.show {
+            transform: translate3d(0, 0, 0);
+          }
+
+          .nav-item {
+            transform: translate3d(600px, 0, 0);
+
+            &.show {
+              transform: translate3d(0, 0, 0);
+            }
+
+            .nav-link {
+              font-weight: bold;
+              padding: 0.5rem;
+              font-size: 1.5rem;
+
+              &:hover {
+                color: set-text-color($primary-color);
+              }
+            }
+
+            &.current > a:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Home Page
+  #home {
+    .smlheading {
+      margin-top: 1rem;
+      line-height: 1.2;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    a {
+      font-size: 1rem;
+      padding: 0.2rem;
+
+      &:hover {
+        color: set-text-color($primary-color);
+      }
+    }
+  }
+
+  // About Me Page
+  .about-body {
+    line-height: 1.5;
+
+    #main-footer {
+      font-weight: 400;
+    }
+  }
+
+  #about {
+    h1 {
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 0 1rem;
+      line-height: 1.2;
+    }
+
+    .container1 {
+      margin-bottom: 0rem;
+
+      .box1 {
+        flex-basis: 100%;
+        justify-content: center;
+
+        .bio-image {
+          margin: auto;
+          background: url("../img/abhisek_portrait_small.jpg");
+          background-position: center;
+        }
+      }
+
+      .box2 {
+        flex-basis: 100%;
+        padding: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .bio-heading {
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.25rem;
+          margin-bottom: 0;
+          margin-top: 1rem;
+        }
+
+        .bio-paragraph {
+          text-align: center;
+          font-weight: 400;
+          font-size: 1rem;
+          padding: 0;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .container2 {
+      justify-content: center;
+      align-items: center;
+
+      .container2box {
+        flex-basis: 100%;
+      }
+
+      .job {
+        border-bottom: none;
+        background: none;
+
+        h3 {
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.25rem;
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+
+        li {
+          font-weight: 400;
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+
+      #list {
+        padding: 0;
+      }
+    }
+  }
+
+  // My Work Page
+  .work-body {
+    line-height: 1.5;
+
+    #work {
+      h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .projects {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        padding-bottom: 1rem;
+
+        .item {
+          a {
+            font-weight: normal;
+
+            img:hover {
+              opacity: 1;
+              border-color: set-text-color($primary-color);
+            }
+          }
+
+          .btn-dark {
+            margin-bottom: 0;
+          }
+
+          .btn-light:hover {
+            background: lighten($color: $primary-color, $amount: 50);
+            color: #333;
+          }
+
+          .btn-dark:hover {
+            background: darken($primary-color, 50);
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    #main-footer {
+      font-weight: normal;
+    }
+  }
+
+  // Contact Me Page
+  .contact-body {
+    line-height: 1.5;
+
+    #contact {
+      h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+
+      .boxes {
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+
+        div {
+          flex-basis: 100%;
+          font-weight: normal;
+          margin-bottom: 1rem;
+          padding: 0.4rem 0.9rem;
+          text-align: left;
+          font-size: 1rem;
+
+          span {
+            font-weight: bold;
+          }
+
+          &:hover {
+            margin-bottom: 1rem;
+            padding: 0.4rem 0.9rem;
+            background: none;
+            color: set-text-color($primary-color);
+            span {
+              color: $secondary-color;
+            }
+            #map {
+              color: #dd4a40;
+            }
+          }
+        }
+      }
+    }
+
+    #main-footer {
+      font-weight: normal;
+    }
+  }
+}
+
+// Smartphones Portrait
+@include mediaSmP {
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    overflow: hidden;
+    background: rgba(51, 51, 51, 0.8);
+  }
+
+  .logo-container {
+    top: 0;
+    left: 0;
+    height: 3rem;
+    width: 3rem;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 4;
+    overflow: hidden;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+
+    .logo {
+      position: absolute;
+      top: 6px;
+      left: 16.805px;
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+  }
+
+  .menu-btn {
+    top: 0;
+    right: 0;
+    height: 3rem;
+    width: 3rem;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 4;
+    overflow: hidden;
+    position: absolute;
+
+    .line1 {
+      position: absolute;
+      top: 17.5px;
+    }
+
+    .line2 {
+      margin: 0 auto;
+      top: 22.5px;
+      position: absolute;
+    }
+
+    .line3 {
+      position: absolute;
+      top: 27.5px;
+    }
+
+    &.close {
+      transform: rotate(180deg);
+
+      .btn-line {
+        // Line 1 - Rotate
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(4px, 3px);
+        }
+
+        // Line 2 - Hide
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        // Line 3 - Rotate
+        &:nth-child(3) {
+          transform: rotate(-50deg) translate(4px, -2.5px);
+        }
+      }
+    }
+
+    .btn-line {
+      width: 17px;
+      height: 1px;
+      left: 15.5px;
+      margin: 0;
+    }
+  }
+
+  main {
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  #main-footer {
+    color: #888;
+    height: 25px;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    padding-top: 2.5rem;
+  }
+
+  .smlheading {
+    line-height: 1.2;
+  }
+
+  .item1 {
+    margin-top: 14vh;
+  }
+
+  // Menu Page
+  body {
+    header {
+      .menu {
+        .menu-branding {
+          float: none;
+          width: 100%;
+          min-height: 0;
+          height: 30vh;
+          transform: translate3d(100%, 0, 0);
+
+          &.show {
+            transform: translate3d(0, 0, 0);
+          }
+
+          .portrait {
+            height: 150px;
+            width: 150px;
+            background: url("../img/abhisek_portrait_small.jpg");
+            background-position: center;
+            transform: translate3d(100%, 0, 0);
+
+            &.show {
+              transform: translate3d(0, 0, 0);
+            }
+          }
+        }
+
+        .menu-nav {
+          float: none;
+          width: 100%;
+          min-height: 0;
+          height: 70vh;
+          justify-content: flex-start;
+          transform: translate3d(-100%, 0, 0);
+
+          &.show {
+            transform: translate3d(0, 0, 0);
+          }
+
+          .nav-item {
+            transform: translate3d(-600px, 0, 0);
+
+            &.show {
+              transform: translate3d(0, 0, 0);
+            }
+
+            .nav-link {
+              font-weight: bold;
+              padding: 0.5rem;
+              font-size: 1.5rem;
+
+              &:hover {
+                color: set-text-color($primary-color);
+              }
+            }
+
+            &.current > a:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Home Page
+  #home {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 1;
+      padding-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    a {
+      font-size: 1rem;
+      padding: 0.2rem;
+
+      &:hover {
+        color: set-text-color($primary-color);
+      }
+    }
+  }
+
+  // About Me Page
+  .about-body {
+    line-height: 1.5;
+
+    #main-footer {
+      font-weight: 400;
+    }
+  }
+
+  #about {
+    h1 {
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 0 1rem;
+      line-height: 1.2;
+    }
+
+    .container1 {
+      margin-bottom: 0rem;
+
+      .box1 {
+        flex-basis: 100%;
+        justify-content: center;
+
+        .bio-image {
+          margin: auto;
+          background: url("../img/abhisek_portrait_small.jpg");
+          background-position: center;
+        }
+      }
+
+      .box2 {
+        flex-basis: 100%;
+        padding: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .bio-heading {
+          text-align: left;
+          font-weight: bold;
+          font-size: 1.25rem;
+          margin-bottom: 0;
+          margin-top: 1rem;
+        }
+
+        .bio-paragraph {
+          text-align: left;
+          font-weight: 400;
+          font-size: 1rem;
+          padding: 0;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .container2 {
+      justify-content: center;
+      align-items: center;
+
+      .container2box {
+        flex-basis: 100%;
+      }
+
+      .job {
+        border-bottom: none;
+        background: none;
+
+        h3 {
+          text-align: left;
+          font-weight: bold;
+          font-size: 1.25rem;
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+
+        li {
+          font-weight: 400;
+          font-size: 1rem;
+          text-align: left;
+        }
+      }
+
+      #list {
+        padding: 0;
+      }
+    }
+  }
+
+  // My Work Page
+  .work-body {
+    line-height: 1.5;
+
+    #work {
+      h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        padding-bottom: 1rem;
+
+        .item {
+          a {
+            font-weight: normal;
+
+            img:hover {
+              opacity: 1;
+              border-color: set-text-color($primary-color);
+            }
+          }
+
+          .btn-dark {
+            margin-bottom: 0;
+          }
+
+          .btn-light:hover {
+            background: lighten($color: $primary-color, $amount: 50);
+            color: #333;
+          }
+
+          .btn-dark:hover {
+            background: darken($primary-color, 50);
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    #main-footer {
+      font-weight: normal;
+    }
+  }
+
+  // Contact Me Page
+  .contact-body {
+    line-height: 1.5;
+
+    #contact {
+      h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+
+      .boxes {
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+
+        div {
+          flex-basis: 100%;
+          font-weight: normal;
+          margin-bottom: 1rem;
+          padding: 0.4rem 0.9rem;
+          text-align: left;
+          font-size: 1rem;
+
+          span {
+            font-weight: bold;
+          }
+
+          &:hover {
+            margin-bottom: 1rem;
+            padding: 0.4rem 0.9rem;
+            background: none;
+            color: set-text-color($primary-color);
+            span {
+              color: $secondary-color;
+            }
+            #map {
+              color: #dd4a40;
+            }
+          }
+        }
+      }
+    }
+
+    #main-footer {
+      font-weight: normal;
+    }
+  }
+}
