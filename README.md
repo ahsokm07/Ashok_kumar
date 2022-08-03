@@ -15,12 +15,3 @@ This is my portfolio website. It contains information about me, my education, sk
 
 ## Website Preview
 
-![Home Page](dist/img/readme/home.png)
-
-![Menu Page](dist/img/readme/menu.png)
-
-![About Page](dist/img/readme/about.png)
-
-![Work Page](dist/img/readme/work.png)
-
-![Contact Page](dist/img/readme/contact.png)
