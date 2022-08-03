@@ -4,7 +4,7 @@ This is my portfolio website. It contains information about me, my education, sk
 
 ## Website link of my portfolio website
 
-[https://github.com/ahsokm07/myport]
+[https://github.com/ahsokm07/my_port]
 
 ## Technologies used in this project
 
